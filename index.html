@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Harry Potter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playpen+Sans:wght@200;300;600;700&family=Roboto+Condensed:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+  </head>
+  <body>
+    <img src="img/logo.png" style="height: 100px; width: 150px; float: center"  onclick="mostrar('portada1')">
+    <header>
+      <div class="loguito">
+        <h2>¡Bienvenido a la casa oficial de Harry Potter!</h2>
+      </div>
+      </header>
+      <nav> 
+        <input type="button" value="Iniciar sesión" onclick="mostrar('sesion')">
+        <input type="button" value="Tienda online" onclick="mostrar(tienda)">
+        <input type="button" value="Conoce mas sobre HP" onclick="mostrar(conoce)">
+        <input type="button" value="Pagina Principal" onclick="volver(portada1)">
+    </nav>
+    <br>
+    <div id="portada1" class="panel">
+      <div class="container">
+
+           <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li><img src="img/hogwarts.jpg" style="max-width: 100%;height: auto;"></li>
+                <li><img src="img/personajes.webp" style="max-width: 100%;height: auto;"></li>
+                <li><img src="img/hogwartsexpress.jpg" style="max-width: 100%;height: auto;"></li>
+            </ul>
+        
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+        
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- ARREGLAR PANELES-->
+    <div id="sesion" class="panel1">
+        <div class="paneles">
+          <form action="ejemplo.php" method="get">
+            <h1>¡Bienvenido de nuevo!</h1>
+            <p>Mail <br><input type="password" name="contrasena"></p> <br>
+              <p>Contraseña <br><input type="password" name="contrasena"></p> <br>
+              <p>Confirmar Contraseña<br> <input type="password" name="Confirmar contrasena"></p> 
+              <input type="reset" value="Ingresar" onclick="volver(`portada1`)"><br> 
+              <br><input type="reset" value="Borrar"> 
+              <br>
+              <br> ¿No tienes cuenta?<input type="button" value="¡Registrate aqui!" onclick="mostrar(registrarse)">
+            </p>
+          </form>
+      </div>
+    </div>
+      
+    <div id="quiz" class="panel1">
+      <div class="paneles">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem officia voluptatibus nostrum ut repudiandae sequi, nam ipsum a, ad placeat, odit iure magni mollitia velit fugit voluptates culpa perferendis reiciendis?</p>
+      </div>
+    </div>
+      
+    <div id="tienda" class="panel1">
+      <div class="paneles">
+        <p> Visita nuestra tienda online y encuentra todo los accesorios de tu saga favorita, ¿Qué estas esperando?</p>
+        <div class="flex-container">
+          <div class="tarjeta" class="panel2"><br>
+            <img src="img/capasp.jpg"><br>
+            <input type="button" value="CAPAS" onclick="mostrar('capas')">
+          </div>
+
+          <div class="tarjeta" class="panel2"><br>
+            <img src="img/baulp.jpg"><br>
+            <input type="button" value="BAULES" onclick="mostrar('baules')">
+          </div>
+        
+          <div class="tarjeta" class="panel2"><br>
+            <img src="img/varitap.png"><br>
+            <input type="button" value="VARITAS" onclick="mostrar('varitas')">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="conoce" class="panel1">
+      <div class="paneles">
+        <h3>¡El trio de oro!</h3>
+        <div class="flex-container">
+          <div class="tarjeta2" class="panel2"><br>
+            <h1>Harry Potter</h1>
+            <img src="img/harry3.jpg"><br>
+           <br>
+          
+           <p>Harry, el protagonista, es conocido por su valentía y determinación. Miembro de la casa Gryffindor, se destaca por su coraje y nobleza. Posee la cicatriz en forma de rayo en la frente, resultado del ataque de Lord Voldemort cuando era un bebé. Su habilidad en el Quidditch y su conexión con las serpientes son aspectos notables. Además, Harry es un Parsel, lo que significa que puede hablar con serpientes.</p>
+          </div>
+
+          <div class="tarjeta2" class="panel1"><br>
+            <h1>Hermione Granger</h1>
+            <img src="img/Hermione1.png"><br>
+            <br>
+            <p>Hermione, la brillante y estudiosa, proviene de la casa Gryffindor. Su inteligencia y habilidades mágicas la destacan, convirtiéndola en una líder natural. Es conocida por su lealtad y su papel crucial en la lucha contra el mal. Hermione también posee una bolsa mágica que amplía su capacidad de almacenamiento.</p>
+
+          </div>
+
+          <div class="tarjeta2" class="panel2"><br>
+            <h1>Ron Weasley </h1>
+            <img src="img/Ron2.jpg"><br>
+            <br>
+            <p>Ron, amigo inseparable de Harry, es un leal miembro de Gryffindor. Aunque proviene de una familia numerosa y a veces caótica, destaca por su humor y coraje. Su habilidad para jugar al ajedrez mágico es crucial en la trama. Ron tiene una varita heredada de su hermano Charlie.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ARREGLAR PANELES PERSONAJES-->
+<div id="potter" class="panel1">
+  <div class="paneles">
+  <h1> Harry Potter</h1>
+</div> </div>
+
+
+<!-- ARREGLAR FORMS-->
+    <div id="registrarse" class="panel1">
+        <div class="paneles">
+          <form action="ejemplo.php" method="get">
+            <h1>¡Bienvenido!</h1>
+      
+              <p>Nombre: <input type="text" name="nombre" size="40"></p>
+              <p>Apellido: <input type="text" name="apellidos" size="30" placeholder="Escriba sus dos apellidos"></p>
+              <p>  Gmail: <input type="text" name="Gmail" size="40"></p>
+              <p>Cumpleaños:  <input type="date" name="fecha de nacimiento"></p>
+              <p>Sexo:</p>
+                  <p><input type="radio" name="hm" value="h" required> Hombre<input type="radio" name="hm" value="m"> Mujer<input type="radio" name="hm" value="m"> No Binario</p>
+                  <p>Contraseña: <input type="text" name="nombre" size="20"></p>
+                  <p>Confirmar contraseña: <input type="text" name="nombre" size="10"></p>
+              <p>
+                <input type="reset" value="Registrarme" onclick="volver(`portada1`)"><br>
+                <br><input type="reset" value="Borrar"> 
+              </p>
+            </form>
+        </div>
+      </div>
+
+      <!-- ARREGLAR PANELES TIENDA-->
+      <div id="capas" class="panel1">
+        <div class="paneles">
+          <h1>Capas</h1>
+          <p>¡Sumérgete en la magia de Hogwarts con nuestras capas inspiradas en Harry Potter! Fabricadas con materiales de alta calidad y atención a cada detalle, estas capas auténticas te transportarán al mundo mágico. Perfectas para fiestas temáticas, eventos de cosplay o simplemente para añadir un toque mágico a tu día a día. Elige entre una variedad de colores y tallas, y haz realidad tu sueño de pertenecer a la escuela de magia más famosa. ¡Descubre la magia con estilo y elegancia!</p>
+             
+             <br><br>  
+          </div>
+          <div class="flex-container">
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Capa Hufflepuff</h1>
+              <img src="img/capa1s.jpeg"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+            </div>
+  
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Capa Ravenclaw</h1>
+              <img src="img/capa2s.jpeg"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+            </div>
+
+
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Capa Gryfindor</h1>
+              <img src="img/capa3s.jpeg"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+            </div>
+          </div>
+         
+              <br>
+              
+             <br><input class="btn btn-danger" type="button" value="Pagina principal" onclick="volver(`portada1`)">
+            </div>
+          </div>
+        </div>          
+      
+
+      <div id="baules" class="panel1">
+        <div class="paneles">
+          <h1>Baules</h1>
+          <p>¡Guarda tus secretos mágicos con estilo en nuestros baúles de Harry Potter! Diseños detallados y materiales de alta calidad hacen de estos baúles una fusión perfecta entre funcionalidad y magia. Elige entre réplicas de personajes o modelos exclusivos para almacenar tus tesoros mágicos con encanto. Perfectos como regalo o para tu colección, estos baúles son la elección ideal para cualquier fan de Harry Potter. ¡Descubre la magia de organizar con estilo!</p>
+             
+             <br><br>  
+          </div>
+          <div class="flex-container">
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Opcion 1</h1>
+              <img src="img/baul1s.jpeg"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+            </div>
+  
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Opcion 2</h1>
+              <img src="img/baul2s.jpeg"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+            </div>
+
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Opcion 3</h1>
+              <img src="img/baul3s.jpeg"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+            </div>
+              <br>
+            
+             <br><input class="btn btn-danger" type="button" value="Pagina principal" onclick="volver(`portada1`)">
+            </div><br><br><br><br>
+          </div>
+        </div>          
+      
+
+      <div id="varitas" class="panel1">
+        <div class="paneles">
+          <h1>Varitas</h1>
+          <p>¡Transforma tu realidad con nuestras varitas de Harry Potter! Diseños auténticos, materiales de calidad y detalles excepcionales que te sumergirán en el mundo mágico. Elige entre réplicas precisas o diseños exclusivos para cosplay, coleccionar o simplemente disfrutar de tu propia varita. Descubre la magia en la palma de tu mano con nuestras varitas, perfectas para fans y coleccionistas. ¡Haz que la magia sea parte de tu vida!</p>
+             
+             <br><br>  
+          </div>
+          <div class="flex-container">
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Varita de Hermione</h1>
+              <img src="img/varita1.jpeg"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+            </div>
+  
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Varita de Harry</h1>
+              <img src="img/varita2.webp"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+              </div>
+
+            <div class="tarjeta2" class="panel2"><br>
+              <h1>Varita de Sauco</h1>
+              <img src="img/varita3.webp"><br>
+              <a href="index2.html">
+                <button>Comprar</button>
+              </a> 
+              </div>
+         
+              <br>
+              
+             <br><input class="btn btn-danger" type="button" value="Pagina principal" onclick="volver(`portada1`)">
+            </div>
+          </div>
+        </div> 
+        <footer>
+          <h5>Harry Potter    Diciembre 2023 - Informatica -  Yañez y Giustozzi Dante Alighieri</h5>
+        </footer>         
+  
+
+        </body>
+      <script src="script.js"></script>
+      </html> 
